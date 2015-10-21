@@ -162,16 +162,30 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Am-vKJ">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wZF-IB-svM">
                                         <rect key="frame" x="0.0" y="114" width="560" height="406"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Am-vKJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="406"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-A1-Qew">
+                                                <rect key="frame" x="104" y="0.0" width="456" height="406"/>
+                                                <animations/>
+                                                <state key="normal" title="Change Date"/>
+                                                <connections>
+                                                    <segue destination="PJ9-Fo-0qZ" kind="show" identifier="ChangeDate" id="KsP-Bs-Pxd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </stackView>
                                 </subviews>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstItem="pMd-Am-vKJ" firstAttribute="leading" secondItem="qOk-Us-gZT" secondAttribute="leading" id="08c-kQ-TdF"/>
                                     <constraint firstItem="mAd-kW-Xss" firstAttribute="leading" secondItem="YWg-5H-6kH" secondAttribute="leading" id="VL8-Ge-fHq"/>
                                     <constraint firstItem="YWg-5H-6kH" firstAttribute="leading" secondItem="qOk-Us-gZT" secondAttribute="leading" id="mfw-FG-hJG"/>
                                 </constraints>
@@ -205,6 +219,46 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1483" y="272"/>
+        </scene>
+        <!--Change Date-->
+        <scene sceneID="Myx-sm-ZpK">
+            <objects>
+                <viewController id="PJ9-Fo-0qZ" customClass="DateViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cIe-3K-5ic"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdZ-Yz-7qR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tri-g0-wYl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QQV-eC-AFz">
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="467130723.11806703">
+                                    <!--2015-10-21 14:32:03 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QQV-eC-AFz" firstAttribute="top" secondItem="cIe-3K-5ic" secondAttribute="bottom" constant="8" id="1cP-4f-lHT"/>
+                            <constraint firstItem="QQV-eC-AFz" firstAttribute="leading" secondItem="tri-g0-wYl" secondAttribute="leadingMargin" id="L7U-A5-G1e"/>
+                            <constraint firstItem="QQV-eC-AFz" firstAttribute="centerY" secondItem="tri-g0-wYl" secondAttribute="centerY" constant="32" id="b2w-gL-3Dy"/>
+                            <constraint firstItem="QQV-eC-AFz" firstAttribute="centerX" secondItem="tri-g0-wYl" secondAttribute="centerX" id="fa1-gd-fxb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QQV-eC-AFz" secondAttribute="trailing" id="qDM-Gm-bdE"/>
+                            <constraint firstItem="QQV-eC-AFz" firstAttribute="top" secondItem="cIe-3K-5ic" secondAttribute="bottom" constant="8" id="tN1-Ji-D7H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Change Date" id="77E-0Z-UpS"/>
+                    <connections>
+                        <outlet property="datePicker" destination="QQV-eC-AFz" id="Tad-tj-W3n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beV-YV-NuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157" y="272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OrC-Mb-ful">

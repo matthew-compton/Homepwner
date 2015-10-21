@@ -16,6 +16,7 @@
 		F94219C71BD6948500AA2AB5 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94219C61BD6948500AA2AB5 /* ItemStore.swift */; settings = {ASSET_TAGS = (); }; };
 		F94219C91BD6C52600AA2AB5 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94219C81BD6C52600AA2AB5 /* ItemCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F94219CB1BD6E4F900AA2AB5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94219CA1BD6E4F900AA2AB5 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F94219CD1BD7D7D900AA2AB5 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94219CC1BD7D7D900AA2AB5 /* DateViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F94219C61BD6948500AA2AB5 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		F94219C81BD6C52600AA2AB5 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		F94219CA1BD6E4F900AA2AB5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F94219CC1BD7D7D900AA2AB5 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				F94219CA1BD6E4F900AA2AB5 /* DetailViewController.swift */,
 				F94219B51BD6906900AA2AB5 /* Assets.xcassets */,
 				F94219B71BD6906900AA2AB5 /* LaunchScreen.storyboard */,
+				F94219CC1BD7D7D900AA2AB5 /* DateViewController.swift */,
 				F94219BA1BD6906900AA2AB5 /* Info.plist */,
 				F94219C01BD6910B00AA2AB5 /* ItemsViewController.swift */,
 				F94219C81BD6C52600AA2AB5 /* ItemCell.swift */,
@@ -149,6 +152,7 @@
 			files = (
 				F94219C11BD6910B00AA2AB5 /* ItemsViewController.swift in Sources */,
 				F94219C31BD691BC00AA2AB5 /* Item.swift in Sources */,
+				F94219CD1BD7D7D900AA2AB5 /* DateViewController.swift in Sources */,
 				F94219C71BD6948500AA2AB5 /* ItemStore.swift in Sources */,
 				F94219CB1BD6E4F900AA2AB5 /* DetailViewController.swift in Sources */,
 				F94219AF1BD6906900AA2AB5 /* AppDelegate.swift in Sources */,

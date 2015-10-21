@@ -71,4 +71,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ChangeDate" {
+            let dateViewController = segue.destinationViewController as! DateViewController
+            dateViewController.item = item
+        }
+    }
+    
 }
