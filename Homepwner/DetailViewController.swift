@@ -8,18 +8,51 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITextFieldDelegate {
-    
+class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialNumberField: UITextField!
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var imageView: UIImageView!
+    
+    var imageStore : ImageStore!
     
     var item: Item! {
         didSet {
             navigationItem.title = item.name
         }
+    }
+    
+    @IBAction func takePicture(sender: UIBarButtonItem) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            imagePicker.sourceType = .Camera
+        } else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func deletePicture(sender: UIBarButtonItem) {
+        imageView.image = nil
+        imageStore.deleteImageForKey(item.itemKey)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        // Image from dictionary
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Store image in store
+        imageStore.setImage(image, forKey: item.itemKey)
+        
+        // Put image on screen
+        imageView.image = image
+        
+        // Dismiss picker screen
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func backgroundTapped(sender: UITapGestureRecognizer) {
@@ -53,6 +86,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         serialNumberField.text = item.serialNumber
         valueField.text = numberFormatter.stringFromNumber(item.valueInDollars)
         dateLabel.text = dateFormatter.stringFromDate(item.dateCreated)
+        
+        // Load image
+        let key = item.itemKey
+        let imageToDisplay = imageStore.imageForKey(key)
+        imageView.image = imageToDisplay
     }
     
     override func viewWillDisappear(animated: Bool) {
