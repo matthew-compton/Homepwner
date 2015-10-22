@@ -93,108 +93,157 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-Ix-TOM">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-o1-0V0">
                                 <rect key="frame" x="20" y="72" width="560" height="476"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-7R-ba5">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-Ix-TOM">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="144"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-kW-Xss">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-7R-ba5">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-kW-Xss">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="162"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iym-aZ-CeX">
+                                                        <rect key="frame" x="51" y="0.0" width="509" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="51" y="0.0" width="229" height="162"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="lv5-wx-egY" id="F2H-ca-Szn"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iym-aZ-CeX">
-                                                <rect key="frame" x="51" y="0.0" width="509" height="30"/>
+                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="162"/>
+                                                </variation>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-C2-wIU">
+                                                <rect key="frame" x="0.0" y="38" width="560" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-5H-6kH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3V9-9n-yVS">
+                                                        <rect key="frame" x="49" y="0.0" width="511" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="49" y="0.0" width="231" height="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="lv5-wx-egY" id="1lq-zl-hX3"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="lv5-wx-egY" id="F2H-ca-Szn"/>
-                                                </connections>
-                                            </textField>
+                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="170" width="280" height="30"/>
+                                                </variation>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0oP-sm-7n9">
+                                                <rect key="frame" x="0.0" y="76" width="560" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOk-Us-gZT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aV-bv-OPN">
+                                                        <rect key="frame" x="48" y="0.0" width="512" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="48" y="0.0" width="232" height="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="lv5-wx-egY" id="bj8-dJ-Kfq"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <animations/>
+                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="208" width="280" height="30"/>
+                                                </variation>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wZF-IB-svM">
+                                                <rect key="frame" x="0.0" y="114" width="560" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Am-vKJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                                                        </variation>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-A1-Qew">
+                                                        <rect key="frame" x="104" y="0.0" width="456" height="30"/>
+                                                        <animations/>
+                                                        <state key="normal" title="Change Date"/>
+                                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="104" y="0.0" width="176" height="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <segue destination="PJ9-Fo-0qZ" kind="show" identifier="ChangeDate" id="KsP-Bs-Pxd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="246" width="280" height="30"/>
+                                                </variation>
+                                            </stackView>
                                         </subviews>
                                         <animations/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-C2-wIU">
-                                        <rect key="frame" x="0.0" y="38" width="560" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-5H-6kH">
-                                                <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3V9-9n-yVS">
-                                                <rect key="frame" x="49" y="0.0" width="511" height="30"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="lv5-wx-egY" id="1lq-zl-hX3"/>
-                                                </connections>
-                                            </textField>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0oP-sm-7n9">
-                                        <rect key="frame" x="0.0" y="76" width="560" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOk-Us-gZT">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aV-bv-OPN">
-                                                <rect key="frame" x="48" y="0.0" width="512" height="30"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="lv5-wx-egY" id="bj8-dJ-Kfq"/>
-                                                </connections>
-                                            </textField>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wZF-IB-svM">
-                                        <rect key="frame" x="0.0" y="114" width="560" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Am-vKJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-A1-Qew">
-                                                <rect key="frame" x="104" y="0.0" width="456" height="30"/>
-                                                <animations/>
-                                                <state key="normal" title="Change Date"/>
-                                                <connections>
-                                                    <segue destination="PJ9-Fo-0qZ" kind="show" identifier="ChangeDate" id="KsP-Bs-Pxd"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="276"/>
+                                        </variation>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-HD-UPL">
-                                        <rect key="frame" x="0.0" y="152" width="560" height="324"/>
+                                        <rect key="frame" x="0.0" y="144" width="560" height="332"/>
                                         <animations/>
                                         <gestureRecognizers/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="280" y="0.0" width="280" height="276"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="144" width="360" height="132"/>
+                                        </variation>
                                     </imageView>
                                 </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstItem="pMd-Am-vKJ" firstAttribute="leading" secondItem="qOk-Us-gZT" secondAttribute="leading" id="08c-kQ-TdF"/>
-                                    <constraint firstItem="mAd-kW-Xss" firstAttribute="leading" secondItem="YWg-5H-6kH" secondAttribute="leading" id="VL8-Ge-fHq"/>
-                                    <constraint firstAttribute="bottom" secondItem="KfO-HD-UPL" secondAttribute="bottom" id="WeM-3t-jVF"/>
-                                    <constraint firstItem="YWg-5H-6kH" firstAttribute="leading" secondItem="qOk-Us-gZT" secondAttribute="leading" id="mfw-FG-hJG"/>
-                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal" distribution="fillEqually"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="72" width="360" height="276"/>
+                                </variation>
                             </stackView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pj-BP-Fwf">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
@@ -221,12 +270,12 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4pj-BP-Fwf" secondAttribute="trailing" id="2Nb-Yx-6r9"/>
+                            <constraint firstItem="fu8-o1-0V0" firstAttribute="top" secondItem="ABj-FU-PNX" secondAttribute="bottom" constant="8" id="4Jo-Np-1ng"/>
                             <constraint firstItem="4pj-BP-Fwf" firstAttribute="leading" secondItem="R5T-Ke-S4G" secondAttribute="leading" id="CWx-5Z-SCc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Faf-Ix-TOM" secondAttribute="trailing" id="T7l-EW-LJV"/>
-                            <constraint firstItem="Faf-Ix-TOM" firstAttribute="leading" secondItem="R5T-Ke-S4G" secondAttribute="leadingMargin" id="Xx3-5Y-E7t"/>
+                            <constraint firstItem="fu8-o1-0V0" firstAttribute="leading" secondItem="R5T-Ke-S4G" secondAttribute="leadingMargin" id="RqF-Gq-xLR"/>
                             <constraint firstItem="Fg0-lv-hLk" firstAttribute="top" secondItem="4pj-BP-Fwf" secondAttribute="bottom" id="jYc-QT-Thc"/>
-                            <constraint firstItem="Faf-Ix-TOM" firstAttribute="top" secondItem="ABj-FU-PNX" secondAttribute="bottom" constant="8" id="q9U-km-C8h"/>
-                            <constraint firstItem="4pj-BP-Fwf" firstAttribute="top" secondItem="Faf-Ix-TOM" secondAttribute="bottom" constant="8" id="tp3-f1-uUY"/>
+                            <constraint firstItem="4pj-BP-Fwf" firstAttribute="top" secondItem="fu8-o1-0V0" secondAttribute="bottom" constant="8" id="jyO-vy-Pnx"/>
+                            <constraint firstItem="fu8-o1-0V0" firstAttribute="trailing" secondItem="R5T-Ke-S4G" secondAttribute="trailingMargin" id="nRA-EA-SW8"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="sAu-gx-Kmt" appends="YES" id="563-TD-037"/>
