@@ -26,7 +26,7 @@
                                             <rect key="frame" x="8" y="8" width="39.5" height="28.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-EA-AZe">
@@ -40,7 +40,7 @@
                                             <rect key="frame" x="552.5" y="23" width="39.5" height="19.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -106,7 +106,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iym-aZ-CeX">
@@ -114,12 +114,18 @@
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="51" y="0.0" width="225" height="30"/>
+                                                        </variation>
                                                         <connections>
                                                             <outlet property="delegate" destination="lv5-wx-egY" id="F2H-ca-Szn"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
                                                 <animations/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="276" height="30"/>
+                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-C2-wIU">
                                                 <rect key="frame" x="0.0" y="38" width="560" height="30"/>
@@ -128,7 +134,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3V9-9n-yVS">
@@ -136,12 +142,18 @@
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="49" y="0.0" width="227" height="30"/>
+                                                        </variation>
                                                         <connections>
                                                             <outlet property="delegate" destination="lv5-wx-egY" id="1lq-zl-hX3"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
                                                 <animations/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="38" width="276" height="30"/>
+                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0oP-sm-7n9">
                                                 <rect key="frame" x="0.0" y="76" width="560" height="30"/>
@@ -150,26 +162,23 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
-                                                        </variation>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aV-bv-OPN">
                                                         <rect key="frame" x="48" y="0.0" width="512" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="48" y="0.0" width="228" height="30"/>
+                                                        </variation>
                                                         <connections>
                                                             <outlet property="delegate" destination="lv5-wx-egY" id="bj8-dJ-Kfq"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
                                                 <animations/>
-                                                <variation key="heightClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="76" width="276" height="30"/>
-                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wZF-IB-svM">
                                                 <rect key="frame" x="0.0" y="114" width="560" height="30"/>
@@ -179,34 +188,31 @@
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="96" height="162"/>
-                                                        </variation>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-A1-Qew">
                                                         <rect key="frame" x="104" y="0.0" width="456" height="30"/>
                                                         <animations/>
                                                         <state key="normal" title="Change Date"/>
-                                                        <variation key="heightClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="104" y="0.0" width="172" height="162"/>
-                                                        </variation>
                                                         <connections>
                                                             <segue destination="PJ9-Fo-0qZ" kind="show" identifier="ChangeDate" id="KsP-Bs-Pxd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <animations/>
-                                                <variation key="heightClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="114" width="276" height="162"/>
-                                                </variation>
                                             </stackView>
                                         </subviews>
                                         <animations/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="276" height="276"/>
+                                        </variation>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-HD-UPL">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-HD-UPL">
                                         <rect key="frame" x="0.0" y="152" width="560" height="324"/>
                                         <animations/>
                                         <gestureRecognizers/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="284" y="0.0" width="276" height="276"/>
+                                        </variation>
                                         <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="144" width="360" height="132"/>
                                         </variation>
